@@ -7,7 +7,7 @@ Currently hosted at: AWS EC2 free tier, thynkzone
 Used languages: Java, Javascript, MySQL, HTML, CSS
 Used ide: Eclipse JEE
 Used server: tomcat9
-See humanitarian private repository to find the ROOT.war file.
+See humanitarian private repository to find the ROOT.war & Humanitarian.aab (for Google Play) files.
 This is a developer-instructions readme.
 
 Curremt user-instructions website: https://humanitarian.cf
@@ -42,7 +42,7 @@ Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 - create user Farabi with password from the secure folder eu.txt
 - flush previlages
 - create database thynkzone
-- USE thynkzone; copy parts of code (tables etc) from thynkzone.sql
+- USE thynkzone; copy parts of code (tables etc) from thynkzone.sql at the humanitarian private repository
 - create database users
 - check if mysql running
 
