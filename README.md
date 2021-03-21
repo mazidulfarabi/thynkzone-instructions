@@ -2,13 +2,26 @@
 
 Steps to follow to setup the humanitarian website & app
 
+Current Humanitarian dynamic app & website: https://www.humanitarian.gq
+Currently hosted at: AWS EC2 free tier, thynkzone
+Used languages: Java, Javascript, MySQL, HTML, CSS
+Used ide: Eclipse JEE
+Used server: tomcat9
+See humanitarian private repository to find the ROOT.war file.
+This is a developer-instructions readme.
+
+Curremt user-instructions website: https://humanitarian.cf
+Currently hosted at: 000webhost, shahriyarchi959
+Used CMS: WordPress
+See humanitarian private repository to find the WordPress export file.
+
 Check the humanitarian private repository for resources
 
 - Host OS: Linux - Centos 7/8 / Ubuntu or Windows - Server / XP / 8 / 10
 - Best choice: Centos 7
 - Minimum Storage - 1 Gb
 - Minimum Ram - 500 Mb
-- Must have a static Public IP Address (make static if variable)
+- Must have a static Public IP Address (make static/elastic if variable)
 - Must have ports 22,80,8080,3306,443 open
 
 GCP help: https://youtu.be/fMqFxV_0-DQ
@@ -41,7 +54,7 @@ Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 - follow https://youtu.be/qgUIA8EwkB0 and install in /usr/local/tomcat9 don't skip the grep | java part
 - follow till the end to set users and passwords as well but change username and password fields
 - increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below
-- check in browser (ip address if domain n'yet dns pointed and :8080 if ports not configured in server.xml) if tomcat running & if not; then check if ports are open
+- check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 
 7) install SSL (cloudflare)
 - register domain, open account at cloudflare.com and enter that domain
