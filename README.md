@@ -28,15 +28,15 @@ GCP help: https://youtu.be/fMqFxV_0-DQ
 AWS help: https://youtu.be/PrkEulPOV4s
 Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 
-1) Connect to SSH via Browser or PUTTY (mostly - port 22)
+1) connect to SSH via browser or PUTTY (mostly - port 22)
 - sudo passwd and create root user password
 - su to login as root
 
-2) Memory Swap if minimum storage >= 4 Gb
+2) memory swap if minimum storage >= 4 Gb
 - follow exactly https://thinkersbase.blogspot.in/2018/03/create-linux-swap.html or might run out of storage
 - check to make sure it worked
 
-4) install mysql (el7-5)
+3) install mysql (el7-5)
 - follow https://cloud.google.com/solutions/setup-mysql (set remote login disabled to no)
 - set root password
 - create user Farabi with password from the secure folder eu.txt
@@ -46,17 +46,17 @@ Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 - create database users
 - check if mysql running
 
-5) install java (openjdk-14's latest)
+4) install java (openjdk-14's latest)
 - follow https://youtu.be/90-0dRxs1fs (centos7) or https://youtu.be/u-6s7osqRvY (ubuntu) rather install "openjdk-14"; follow until the end to set bash .src path
 - check java -version
 
-6) install tomcat (9's latest)
+5) install tomcat (9's latest)
 - follow https://youtu.be/qgUIA8EwkB0 and install in /usr/local/tomcat9 don't skip the grep | java part
 - follow till the end to set users and passwords as well but change username and password fields
 - increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 
-7) install SSL (cloudflare)
+6) install SSL (cloudflare)
 - register domain, open account at cloudflare.com and enter that domain
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
@@ -64,12 +64,12 @@ Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 - see the image in humanitarian private repository and edit server.xml following that
 - restart tomcat server and wait for a few minutes to see if worked
 
-8) deploy war (from private repository)
+7) deploy war (from private repository)
 - go to domain/manager/html/
 - delete current ROOT and deploy the root from humanitarian private repository - root after ssl - deploy after renaming it to ROOT.war
 - check if online
 
-9) make sure mail reaches
+8) make sure mail reaches
 - create account, if mail doesn't reach, create app password for thynkzone.help and paste at secured folder ep.txt and check mailer.java and reupload ROOT.war
 
 9) backup database
