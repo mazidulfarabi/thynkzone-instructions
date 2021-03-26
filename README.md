@@ -40,6 +40,7 @@ Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 - follow https://cloud.google.com/solutions/setup-mysql (set remote login disabled to no)
 - set root password
 - create user Farabi with password from the secure folder eu.txt
+- grant permissions
 - flush previlages
 - create database thynkzone
 - USE thynkzone; copy parts of code (tables etc) from thynkzone.sql at the humanitarian private repository
@@ -61,7 +62,7 @@ Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
 - create .crt and .pem in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
-- see the image in humanitarian private repository and edit server.xml following that
+- see the image file in humanitarian private repository and edit server.xml following that
 - restart tomcat server and wait for a few minutes to see if worked
 
 7) deploy war (from private repository)
