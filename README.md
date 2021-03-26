@@ -4,7 +4,7 @@ Steps to follow to setup the humanitarian website & app
 
 Current Humanitarian dynamic app & website: https://www.humanitarian.gq
 Currently hosted at: AWS EC2 free tier, thynkzone
-Used languages: Java, Javascript, MySQL, HTML, CSS
+Used languages: Java, Javascript, Jquery(Ajax), MySQL, HTML, CSS
 Used ide: Eclipse JEE
 Used server: tomcat9
 See humanitarian private repository to find the ROOT.war & Humanitarian.aab (for Google Play) files.
