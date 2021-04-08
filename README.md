@@ -43,7 +43,7 @@ Step 1 - Eclipse
 - download and install eclipse-jee latest
 - download tomcat 9's latest
 - in eclipse, select file -> import -> web -> war
-- import humanitarian private repo's ROOT - after ssl.war after renaming it to humanitarian.war
+- import humanitarian private repo's ROOT - after ssl.war after renaming it to humanitarian.war & disselect jars (default) at next
 - similarly import humanitarian2.war
 - add tomcat server in eclipse
 - make sure to refresh browser cache if css updates not working
