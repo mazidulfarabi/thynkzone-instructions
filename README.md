@@ -30,6 +30,7 @@ AWS help: https://youtu.be/PrkEulPOV4s
 
 Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 
+
 0) IDE setup eclipse & vscode for local editing and debugging
 
 Step 1 - Eclipse
