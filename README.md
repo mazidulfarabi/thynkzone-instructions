@@ -42,10 +42,9 @@ Step 1 - Eclipse
 - download and install java - openjdk15
 - download and install eclipse-jee latest
 - download tomcat 9's latest
-- in eclipse project workspace, create new dynamic web project
-- and in eclipse/projects/project_name/WebContent/, paste all the files from ROOT.war's WebContent except web-inf and meta-inf in humanitarian private repository
-- in eclipse/projects/project_name/src/ paste all .java files only from ROOT.war's web-inf/classes
-- in eclipse/projects/project_name/WebContent/web-inf/lib/ paste all .jar files from ROOT.war's web-inf/lib
+- in eclipse, select file -> import -> web -> war
+- import humanitarian private repo's ROOT - after ssl.war after renaming it to humanitarian.war
+- similarly import humanitarian2.war
 - add tomcat server in eclipse
 - make sure to refresh browser cache if css updates not working
 - add project to github repository, following https://youtu.be/LPT7v69guVY
