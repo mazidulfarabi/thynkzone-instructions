@@ -30,6 +30,9 @@ AWS help: https://youtu.be/PrkEulPOV4s
 
 Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 
+-----------------------------------------------------------------
+HUMANITARIAN WEBSITE AND APP ~ SETUP AND DEPLOYMENT INSTRUCTIONS
+-----------------------------------------------------------------
 
 0) IDE setup eclipse & vscode for local editing and debugging
 
