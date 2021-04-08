@@ -56,6 +56,7 @@ Step 2 - VS Code
 - install java essential extensions pack from, https://code.visualstudio.com/docs/languages/java
 - install tomcat server adding option to vscode at, https://marketplace.visualstudio.com/items?itemName=adashen.vscode-tomcat
 - add tomcat server from eclipse/tomcat9
+- click on open java project and select eclipse/projects/project_name
 - add github integration, following https://youtu.be/3Tn58KQvWtU
 
 1) Connect to SSH via browser or PUTTY (mostly - port 22)
