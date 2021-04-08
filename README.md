@@ -25,10 +25,13 @@ Check the humanitarian private repository for resources
 - Must have ports 22,80,8080,3306,443 open
 
 GCP help: https://youtu.be/fMqFxV_0-DQ
+
 AWS help: https://youtu.be/PrkEulPOV4s
+
 Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 
 0) IDE setup eclipse & vscode for local editing and debugging
+
 Step 1 - Eclipse
 - download and install xampp server for phpmyadmin and import thynkzone.sql database after creating, and create users database
 - in phpmyadmin, create new user farabi, set password from secured, grant previlages and flush
@@ -46,6 +49,7 @@ Step 1 - Eclipse
 - set cookies to secure in loginuser3.jsp and db.java; change filepaths and '\\' to '/' at following
 - af,bf,cf,ss,db,move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
 - export project as ROOT.war
+
 Step 2 - VS Code
 - complete all steps in step 1
 - download and install java vscode
