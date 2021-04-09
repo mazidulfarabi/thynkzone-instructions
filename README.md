@@ -34,9 +34,9 @@ Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 HUMANITARIAN WEBSITE AND APP ~ SETUP AND DEPLOYMENT INSTRUCTIONS
 -----------------------------------------------------------------
 
-0) IDE setup eclipse & vscode for local editing and debugging
+0) IDE setup eclipse, vscode & notepad++ for local editing and debugging
 
-Step 1 - Eclipse
+Step 1 - Eclipse (required)
 - download and install xampp server for phpmyadmin and import thynkzone.sql database after creating, and create users database
 - in phpmyadmin, create new user farabi, set password from secured, grant previlages and flush
 - download and install java - openjdk15
@@ -54,7 +54,7 @@ Step 1 - Eclipse
 - af,bf,cf,ss,db(twice),move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
 - export project as ROOT.war
 
-Step 2 - VS Code
+Step 2 - VS Code (optional)
 *currently no live web browser view support*
 - complete all steps in step 1
 - download and install vscode
@@ -64,6 +64,9 @@ Step 2 - VS Code
 - add github integration, following https://youtu.be/3Tn58KQvWtU
 - go to source control -> open folder containing a repository
 - remeber to push changes after commit
+
+Step 3 - Notepad++ (optional)
+- use for find/replace in all pages at once
 
 1) Connect to SSH via browser or PUTTY (mostly - port 22)
 - sudo passwd and create root user password
