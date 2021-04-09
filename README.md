@@ -117,8 +117,8 @@ Step 3 - Notepad++ (optional)
 - create account, if mail doesn't reach, create app password for thynkzone.help and paste at secured folder ep.txt and check mailer.java and reupload ROOT.war
 
 9) Backup images and database
-- per two months, backup database using mysqldump
-- backup by downloading all images
+- per two months, backup database using mysqldump and download (https://stackoverflow.com/questions/9427553/how-to-download-a-file-from-server-using-ssh)
+- backup by downloading all images from /usr/local/img and download (https://stackoverflow.com/questions/9427553/how-to-download-a-file-from-server-using-ssh)
 
 10) Android app changes
 -  publish domain or other changes for the android app, login to kodular using google sign in as detectivemailoffical
