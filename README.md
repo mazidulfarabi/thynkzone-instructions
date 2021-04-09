@@ -105,7 +105,7 @@ Step 3 - Notepad++ (optional)
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
 - create .crt and .pem in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
-- see the image file in humanitarian private repository and edit server.xml following that
+- see the image files in humanitarian private repository and edit server.xml following that
 - restart tomcat server and wait for a few minutes to see if worked
 
 7) Deploy war (from private repository)
