@@ -55,6 +55,7 @@ Step 1 - Eclipse
 - export project as ROOT.war
 
 Step 2 - VS Code
+*currently no live web browser view support*
 - complete all steps in step 1
 - download and install vscode
 - install java essential extensions pack from, https://code.visualstudio.com/docs/languages/java
