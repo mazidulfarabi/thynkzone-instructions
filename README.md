@@ -61,7 +61,8 @@ Step 2 - VS Code
 - install tomcat server adding option to vscode at, https://marketplace.visualstudio.com/items?itemName=adashen.vscode-tomcat
 - add tomcat server from eclipse/tomcat9
 - add github integration, following https://youtu.be/3Tn58KQvWtU
-- clone repository
+- go to source control -> open folder containing a repository
+- remeber to push changes after commit
 
 1) Connect to SSH via browser or PUTTY (mostly - port 22)
 - sudo passwd and create root user password
