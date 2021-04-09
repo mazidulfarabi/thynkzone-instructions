@@ -85,7 +85,7 @@ Step 3 - Notepad++ (optional)
 - create database thynkzone
 - USE thynkzone; copy parts of code (tables etc) from thynkzone.sql at the humanitarian private repository
 - create database users
-- increase max connections
+- increase max connections -> edit /etc/my.cnf (see my.cnf-edit pic in humanitarian private repo), restart mysql (service mysql restart)
 - check if mysql running
 
 4) Install java (openjdk-14's latest)
