@@ -51,7 +51,7 @@ Step 1 - Eclipse
 - add project to github repository, following https://youtu.be/LPT7v69guVY
 - to make ready for hosted in other servers, make sure 2 things in following and do vice versa for ROOT.war to local
 - set cookies to secure in loginuser3.jsp and db.java; change filepaths and '\\' to '/' at following
-- af,bf,cf,ss,db,move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
+- af,bf,cf,ss,db(twice),move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
 - export project as ROOT.war
 
 Step 2 - VS Code
