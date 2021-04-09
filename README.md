@@ -98,7 +98,7 @@ Step 3 - Notepad++ (optional)
 - increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below
 - in server.xml, change max thread size and max connections
 - in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img file in /usr/local/ and copy prof.png by following command
-- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png
+- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in humanitarian private repo)
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 
 6) Install SSL (cloudflare)
@@ -106,7 +106,7 @@ Step 3 - Notepad++ (optional)
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
 - create .crt and .pem in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
-- see the image files in humanitarian private repository and edit server.xml following that
+- edit server.xml (see ssl-server-xml-edit pics in humanitarian private repo)
 - restart tomcat server and wait for a few minutes to see if worked
 
 7) Deploy war (from private repository)
