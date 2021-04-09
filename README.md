@@ -48,7 +48,7 @@ Step 1 - Eclipse
 - similarly import humanitarian2.war
 - run as server & add the projects to the server
 - make sure to refresh browser cache if css updates not working
-- add project to github repository, following https://youtu.be/LPT7v69guVY
+- add project to github repository, following https://youtu.be/LPT7v69guVY (make sure github local files same as eclipse local files)
 - to make ready for hosted in other servers, make sure 2 things in following and do vice versa for ROOT.war to local
 - set cookies to secure in loginuser3.jsp and db.java; change filepaths and '\\' to '/' at following
 - af,bf,cf,ss,db,move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
@@ -56,12 +56,12 @@ Step 1 - Eclipse
 
 Step 2 - VS Code
 - complete all steps in step 1
-- download and install java vscode
+- download and install vscode
 - install java essential extensions pack from, https://code.visualstudio.com/docs/languages/java
 - install tomcat server adding option to vscode at, https://marketplace.visualstudio.com/items?itemName=adashen.vscode-tomcat
 - add tomcat server from eclipse/tomcat9
-- click on open java project and select eclipse/projects/project_name
 - add github integration, following https://youtu.be/3Tn58KQvWtU
+- clone repository
 
 1) Connect to SSH via browser or PUTTY (mostly - port 22)
 - sudo passwd and create root user password
