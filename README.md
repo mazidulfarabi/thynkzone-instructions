@@ -97,7 +97,7 @@ Step 3 - Notepad++ (optional)
 - follow till the end to set users and passwords as well but change username and password fields
 - increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below
 - in server.xml, change max thread size and max connections
-- in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost
+- in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img file in /usr/local/ and move prof.png there
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 
 6) Install SSL (cloudflare)
