@@ -79,7 +79,7 @@ Step 3 - Notepad++ (optional)
 3) Install mysql (el7-5)
 - follow https://cloud.google.com/solutions/setup-mysql (set remote login disabled to no)
 - set root password
-- create user Farabi with password from the secure folder ep.txt
+- create user Farabi with password from the secure folder ep.txt+"09"
 - grant permissions
 - flush previlages
 - create database thynkzone
