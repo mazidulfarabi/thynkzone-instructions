@@ -78,7 +78,7 @@ Step 3 - Notepad++ (optional)
 - check to make sure it worked
 
 3) Install mysql
-- follow https://cloud.google.com/solutions/setup-mysql (set remote login disabled to no)
+- follow https://cloud.google.com/solutions/setup-mysql  or https://youtu.be/TG6WAnyeDRw (set remote login disabled to yes)
 - set root password
 - create user Farabi with password from the secure folder ep.txt+"09"
 - grant all permissions
