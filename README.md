@@ -50,6 +50,7 @@ Step 1 - Eclipse (required)
 - make sure to refresh browser cache if css updates not working
 - add project to github repository, following https://youtu.be/LPT7v69guVY
 - to make ready for hosted in other servers, make sure 2 things in following and do vice versa for ROOT.war to local
+----------------------------------------------------------------------------------------------------------------------
 - set cookies to secure in loginuser3.jsp and db.java; change filepaths and '\\' to '/' at following
 - af,bf,cf,ss,db(twice),move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
 - export project as ROOT.war
@@ -76,37 +77,40 @@ Step 3 - Notepad++ (optional)
 - follow exactly https://thinkersbase.blogspot.in/2018/03/create-linux-swap.html or might run out of storage
 - check to make sure it worked
 
-3) Install mysql (el7-5)
+3) Install mysql
 - follow https://cloud.google.com/solutions/setup-mysql (set remote login disabled to no)
 - set root password
 - create user Farabi with password from the secure folder ep.txt+"09"
-- grant permissions
+- grant all permissions
 - flush previlages
 - create database thynkzone
-- USE thynkzone; copy parts of code (tables etc) from thynkzone.sql at the humanitarian private repository
+- USE thynkzone; copy code from thynkzone.sql at the humanitarian private repository
 - create database users
-- increase max connections -> edit /etc/my.cnf (see my.cnf-edit pic in humanitarian private repo), restart mysql (service mysql restart)
+- increase max connections -> SET GLOBAL -> restart mysql (service mysql restart)
 - check if mysql running
 
-4) Install java (openjdk-14's latest)
+4) Install java (oraclejdk-18's latest)
 - follow https://youtu.be/90-0dRxs1fs (centos7) or https://youtu.be/u-6s7osqRvY (ubuntu) rather install "openjdk-14"; follow until the end to set bash .src path
 - check java -version
+- check echo $JAVA_HOME
 
 5) Install tomcat (9's latest)
 - follow https://youtu.be/qgUIA8EwkB0 and install in /usr/local/tomcat9 don't skip the grep java part
 - follow till the end to set users and passwords as well but change username and password fields
 - increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below
 - in server.xml, change max thread size and max connections
-- in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img file in /usr/local/ and copy prof.png by following command
-- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in humanitarian private repo)
+- in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img file in /usr/local/ and copy prof.png, blank.webp by following command
+- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in humanitarian private repo) - or wget
+- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/blank.webp - or wget
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 
 6) Install SSL (cloudflare)
 - register domain, open account at cloudflare.com and enter that domain
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
-- create .crt and .pem in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
-- edit server.xml (see ssl-server-xml-edit pics in humanitarian private repo)
+- create .crt and .key and ca_bundle.crt in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
+- edit server.xml (see ssl-server-xml-edit pics in humanitarian private repo and add admin-gui and allowipaddress".*")
+- edit conf/tomcat-users.xml
 - restart tomcat server and wait for a few minutes to see if worked
 
 7) Deploy war (from private repository)
