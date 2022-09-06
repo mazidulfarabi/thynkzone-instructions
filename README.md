@@ -56,6 +56,8 @@ Step 1 - Eclipse (required)
 - af,bf,cf,ss,db(twice),move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
 - export project as ROOT.war
 
+>>Domain Change --> Google reCaptcha at Google reCaptcha website only, (thynkzone.help gmail account), Disqus Comments link at Disqus website only, and ssl-certificates at cloudflare and tomcat/conf/...cert and ...key (and maybe also ...ca.bundle
+
 Step 2 - VS Code (optional)
 note: currently no live web browser view support and war export support
 - complete all steps in step 1
