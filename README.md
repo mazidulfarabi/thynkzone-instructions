@@ -2,7 +2,7 @@
 
 Steps to follow to setup the humanitarian website & app
 
-Current Humanitarian dynamic app & website: https://www.humanitarian.gq
+Current Humanitarian dynamic app & website: https://www.thynkzone.xyz
 Currently hosted at: AWS EC2 free tier, user: thynkzone
 Used languages: Java, Javascript, Jquery(Ajax), MySQL, HTML, CSS
 Used ide: Eclipse JEE
@@ -10,7 +10,7 @@ Used server: tomcat9
 See humanitarian private repository to find the ROOT.war & Humanitarian.aab (for Google Play) files.
 This is a developer-instructions readme.
 
-Curremt user-instructions website: https://humanitarian.cf
+Curremt user-instructions website: none
 Currently hosted at: 000webhost, shahriyarchi959
 Used CMS: WordPress
 See humanitarian private repository to find the WordPress export file.
@@ -71,6 +71,8 @@ note: currently no live web browser view support and war export support
 
 Step 3 - Notepad++ (optional)
 - use for find/replace in all pages at once
+
+----------------------------------------------------------------------------------------------VM/VPS Installations steps
 
 1) Connect to SSH via browser or PUTTY (mostly - port 22)
 - sudo passwd and create root user password
