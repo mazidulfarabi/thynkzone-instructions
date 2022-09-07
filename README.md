@@ -3,7 +3,7 @@
 Steps to follow to setup the humanitarian website & app
 
 Current Humanitarian dynamic app & website: https://www.thynkzone.xyz
-Currently hosted at: AWS EC2 free tier, user: thynkzone
+Currently hosted at: Oracle Free Tier, Ubuntu 22.04, Ampere Arm Processor 4 OCPU, 24 GB memory, 200GB disk volume, OpenJdk 18, mySQL 8, tomcat 9
 Used languages: Java, Javascript, Jquery(Ajax), MySQL, HTML, CSS
 Used ide: Eclipse JEE
 Used server: tomcat9
@@ -18,7 +18,7 @@ See humanitarian private repository to find the WordPress export file.
 Check the humanitarian private repository for resources
 
 - Host OS: Linux - Centos 7/8 / Ubuntu or Windows - Server / XP / 8 / 10
-- Best choice: Centos 7
+- Best choice: Ubuntu 22.04
 - Minimum Storage - 1 Gb
 - Minimum Ram - 500 Mb
 - Must have a static Public IP Address (make static/elastic if variable)
@@ -79,7 +79,7 @@ Step 3 - Notepad++ (optional)
 - sudo passwd and create root user password
 - su to login as root
 
-2) Memory swap if minimum storage >= 4 Gb
+2) Memory swap if minimum storage >= 4 Gb -- (Optional Step)
 - follow exactly https://thinkersbase.blogspot.in/2018/03/create-linux-swap.html or might run out of storage
 - check to make sure it worked
 
@@ -103,11 +103,12 @@ Step 3 - Notepad++ (optional)
 5) Install tomcat (9's latest)
 - follow https://youtu.be/qgUIA8EwkB0 and install in /usr/local/tomcat9 don't skip the grep java part
 - follow till the end to set users and passwords as well but change username and password fields
-- increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below
+- increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below -- (Optional Step)
 - in server.xml, change max thread size and max connections
 - in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img file in /usr/local/ and copy prof.png, blank.webp by following command
+- make sure in server.xml, port 443 uses -- http11nioprotocol
 - cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in humanitarian private repo) - or wget
-- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/blank.webp - or wget
+- mv /usr/local/tomcat9/webapps/ROOT/img/prof.png and /usr/local/img/blank.webp - wget from any image hosting service
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 
 6) Install SSL (cloudflare)
