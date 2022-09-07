@@ -3,7 +3,7 @@
 Steps to follow to setup the humanitarian website & app
 
 Current Humanitarian dynamic app & website: https://www.thynkzone.xyz
--Currently hosted at: Oracle Free Tier, Ubuntu 22.04, Ampere Arm Processor 4 OCPU, 24 GB memory, 200GB disk volume, OpenJdk 18, mySQL 8, tomcat 9
+- Currently hosted at: Oracle Free Tier, Ubuntu 22.04, Ampere Arm Processor 4 OCPU, 24 GB memory, 200GB disk volume, OpenJdk 18, mySQL 8, tomcat 9
 Used languages: Java, Javascript, Jquery(Ajax), MySQL, HTML, CSS
 Used ide: Eclipse JEE
 Used server: tomcat9
