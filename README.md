@@ -137,3 +137,8 @@ Step 3 - Notepad++ (optional)
 -  set version += 1 sub-version += 1
 -  export as AAB with name Humanitarian
 -  login to google play as thynkzone and create release and upload and then publish
+
+* Idea for phpmyadmin installation
+- install apache and phpmyadmin following steps from youtube videos
+- remember, when using phpmyadmin, port 80 needs to be open for apache server, so shutdown tomcat for accessing phpmyadmin and making changes
+- assign a Under Construction page and name it index.html under apache server (htdocs probably) so that whenever tomcat is off, domain shows that page to users
