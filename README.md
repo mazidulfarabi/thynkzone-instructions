@@ -96,7 +96,7 @@ Step 3 - Notepad++ (optional)
 - check if mysql running
 
 4) Install java (oraclejdk-18's latest)
-- follow https://youtu.be/90-0dRxs1fs (centos7) or https://youtu.be/u-6s7osqRvY (ubuntu) rather install "openjdk-14"; follow until the end to set bash .src path
+- follow https://youtu.be/90-0dRxs1fs (centos7) or https://youtu.be/u-6s7osqRvY (ubuntu) rather install "openjdk-18"; follow until the end to set bash .src path
 - check java -version
 - check echo $JAVA_HOME
 
