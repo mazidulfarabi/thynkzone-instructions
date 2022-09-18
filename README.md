@@ -11,11 +11,6 @@ Google Play: https://play.google.com/store/apps/details?id=io.kodular.detectivem
 - See Thynkzone private repository to find the ROOT.war & Thynkzone.aab (for Google Play) files.
 - This is a developer-instructions readme.
 
-Curremt user-instructions website: none
-Currently hosted at: 000webhost, shahriyarchi959
-Used CMS: WordPress
-See Thynkzone private repository to find the WordPress export file.
-
 Check the Thynkzone private repository for resources
 
 - Host OS: Linux - Centos 7/8 / Ubuntu or Windows - Server / XP / 8 / 10
