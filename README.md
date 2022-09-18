@@ -45,8 +45,8 @@ Step 1 - Eclipse (required)
 - rename tomcat to tomcat9
 - add tomcat server in eclipse
 - in eclipse, select file -> import -> web -> war
-- import humanitarian private repo's ROOT - after ssl.war after renaming it to humanitarian.war & disselect jars (default) at next
-- similarly import humanitarian2.war
+- import thynkzone private repo's ROOT - after ssl.war after renaming it to thynkzone.war & disselect jars (default) at next
+- similarly import thynkzone2.war
 - run as server & add the projects to the server
 - make sure to refresh browser cache if css updates not working
 - add project to github repository, following https://youtu.be/LPT7v69guVY
@@ -90,7 +90,7 @@ Step 3 - Notepad++ (optional)
 - grant all permissions
 - flush previlages
 - create database thynkzone
-- USE thynkzone; copy code from thynkzone.sql at the humanitarian private repository
+- USE thynkzone; copy code from thynkzone.sql at the thynkzone private repository
 - create database users
 - increase max connections -> SET GLOBAL -> restart mysql (service mysql restart)
 - check if mysql running
@@ -107,7 +107,7 @@ Step 3 - Notepad++ (optional)
 - in server.xml, change max thread size and max connections
 - in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img file in /usr/local/ and copy prof.png, blank.webp by following command
 - make sure in server.xml, port 443 uses -- http11nioprotocol
-- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in humanitarian private repo) - or wget
+- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in thynkzone private repo) - or wget
 - mv /usr/local/tomcat9/webapps/ROOT/img/prof.png and /usr/local/img/blank.webp - wget from any image hosting service
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 
@@ -116,13 +116,13 @@ Step 3 - Notepad++ (optional)
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
 - create .crt and .key and ca_bundle.crt in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
-- edit server.xml (see ssl-server-xml-edit pics in humanitarian private repo and add admin-gui and allowipaddress".*")
+- edit server.xml (see ssl-server-xml-edit pics in thynkzone private repo and add admin-gui and allowipaddress".*")
 - edit conf/tomcat-users.xml
 - restart tomcat server and wait for a few minutes to see if worked
 
 7) Deploy war (from private repository)
 - go to domain/manager/html/
-- delete current ROOT and deploy the root from humanitarian private repository - root after ssl - deploy after renaming it to ROOT.war
+- delete current ROOT and deploy the root from thynkzone private repository - root after ssl - deploy after renaming it to ROOT.war
 - check if online
 
 8) Make sure mail reaches
@@ -135,7 +135,7 @@ Step 3 - Notepad++ (optional)
 10) Android app changes
 -  publish domain or other changes for the android app, login to kodular using google sign in as detectivemailoffical
 -  set version += 1 sub-version += 1
--  export as AAB with name Humanitarian
+-  export as AAB with name thynkzone
 -  login to google play as thynkzone and create release and upload and then publish
 
 P.S. Idea for phpmyadmin installation
