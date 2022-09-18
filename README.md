@@ -13,12 +13,12 @@ Google Play: https://play.google.com/store/apps/details?id=io.kodular.detectivem
 
 Check the Thynkzone private repository for resources
 
-- Host OS: Linux - Centos 7/8 / Ubuntu or Windows - Server / XP / 8 / 10
-- Best choice: Ubuntu 22.04
-- Minimum Storage - 1 Gb
-- Minimum Ram - 500 Mb
-- Must have a static Public IP Address (make static/elastic if variable)
-- Must have ports 22,80,8080,3306,443 open
+- Host OS: Linux - Ubuntu 22.04 or Centos 7/8 or Windows - Server / XP / 8 / 10
+- Recommended: Ubuntu 22.04
+- Required Minimum Storage - 1 Gb
+- Required Minimum Ram - 500 Mb
+- Must have a static Public IP Address (make static/elastic if variable/dynamic)
+- Must have ports 22,80,8080,3306,443 open on TCP
 
 GCP help: https://youtu.be/fMqFxV_0-DQ
 
@@ -48,6 +48,7 @@ Step 1 - Eclipse (required)
 - add project to github repository, following https://youtu.be/LPT7v69guVY
 - to make ready for hosted in other servers, make sure 2 things in following and do vice versa for ROOT.war to local
 ----------------------------------------------------------------------------------------------------------------------
+
 - delete all extra images and img from eclipse, also delete all users tables and thynkzone table entries from database if ROOT is not duplicated for future home-development
 - set cookies to secure in loginuser3.jsp and db.java; change filepaths and '\\' to '/' at following
 - af,bf,cf,ss,db(twice),move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
@@ -66,8 +67,10 @@ note: currently no live web browser view support and war export support
 - go to source control -> open folder containing a repository
 - remeber to push changes after commit
 
-Step 3 - Notepad++ (optional)
+Step 3 - Notepad++ (optional but very useful)
 - use for find/replace in all pages at once
+
+
 
 ----------------------------------------------------------------------------------------------VM/VPS Installations steps
 
@@ -80,7 +83,7 @@ Step 3 - Notepad++ (optional)
 - check to make sure it worked
 
 3) Install mysql
-- follow https://cloud.google.com/solutions/setup-mysql  or https://youtu.be/TG6WAnyeDRw (set remote login disabled to yes)
+- follow https://cloud.google.com/solutions/setup-mysql  or https://youtu.be/TG6WAnyeDRw
 - set root password
 - create user Farabi with password from the secure folder ep.txt+"09"
 - grant all permissions
@@ -101,18 +104,18 @@ Step 3 - Notepad++ (optional)
 - follow till the end to set users and passwords as well but change username and password fields
 - increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below -- (Optional Step)
 - in server.xml, change max thread size and max connections
-- in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img file in /usr/local/ and copy prof.png, blank.webp by following command
-- make sure in server.xml, port 443 uses -- http11nioprotocol
+- in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img folder in /usr/local/ and copy prof.png, blank.webp by following command
 - cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in thynkzone private repo) - or wget
 - mv /usr/local/tomcat9/webapps/ROOT/img/prof.png and /usr/local/img/blank.webp - wget from any image hosting service
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
+- make sure in server.xml, port 443 uses -- http11nioprotocol
 
 6) Install SSL (cloudflare)
 - register domain, open account at cloudflare.com and enter that domain
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
 - create .crt and .key and ca_bundle.crt in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
-- edit server.xml (see ssl-server-xml-edit pics in thynkzone private repo and add admin-gui and allowipaddress".*")
+- edit server.xml (see ssl-server-xml-edit pics in thynkzone private repo and add admin-gui and make allowipaddress.* or uncomment that in valve settings in somefile.xml)
 - edit conf/tomcat-users.xml
 - restart tomcat server and wait for a few minutes to see if worked
 
