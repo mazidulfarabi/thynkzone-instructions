@@ -1,21 +1,21 @@
-# humanitarian-instructions
+# Thynkzone-instructions
 
-Steps to follow to setup the humanitarian website & app
+Steps to follow to setup the Thynkzone website & app
 
-Current Humanitarian dynamic app & website: https://www.thynkzone.xyz
+Current Thynkzone dynamic app & website: https://www.thynkzone.xyz
 - Currently hosted at: Oracle Free Tier, Ubuntu 22.04, Ampere Arm Processor 4 OCPU, 24 GB memory, 200GB disk volume, OpenJdk 18, mySQL 8, tomcat 9
 - Used languages: Java, Javascript, Jquery(Ajax), MySQL, HTML, CSS
 - Used ide: Eclipse JEE
 - Used server: tomcat9
-- See humanitarian private repository to find the ROOT.war & Humanitarian.aab (for Google Play) files.
+- See Thynkzone private repository to find the ROOT.war & Thynkzone.aab (for Google Play) files.
 - This is a developer-instructions readme.
 
 Curremt user-instructions website: none
 Currently hosted at: 000webhost, shahriyarchi959
 Used CMS: WordPress
-See humanitarian private repository to find the WordPress export file.
+See Thynkzone private repository to find the WordPress export file.
 
-Check the humanitarian private repository for resources
+Check the Thynkzone private repository for resources
 
 - Host OS: Linux - Centos 7/8 / Ubuntu or Windows - Server / XP / 8 / 10
 - Best choice: Ubuntu 22.04
@@ -31,7 +31,7 @@ AWS help: https://youtu.be/PrkEulPOV4s
 Oracle Cloud help: https://youtu.be/6dkMo29HyM0
 
 -----------------------------------------------------------------
-HUMANITARIAN WEBSITE AND APP ~ SETUP AND DEPLOYMENT INSTRUCTIONS
+Thynkzone WEBSITE AND APP ~ SETUP AND DEPLOYMENT INSTRUCTIONS
 -----------------------------------------------------------------
 
 0) IDE setup eclipse, vscode & notepad++ for local editing and debugging
