@@ -5,10 +5,10 @@ Steps to follow to setup the Thynkzone website & app
 Current Thynkzone dynamic app & website: https://www.thynkzone.xyz
 Google Play: https://play.google.com/store/apps/details?id=io.kodular.detectivemailofficial.Thynkzone
 - Currently hosted at: Oracle Free Tier, Ubuntu 22.04, Ampere Arm Processor 4 OCPU, 24 GB memory, 200GB disk volume, OpenJdk 18, mySQL 8, tomcat 9
-- Used languages: Java, Javascript, Jquery(Ajax), MySQL, HTML, CSS
-- Used ide: Eclipse JEE
+- Used languages: Java EE, Javascript, Jquery(Ajax), MySQL, HTML, CSS
+- Used ide: Eclipse Java EE
 - Used server: tomcat9
-- See Thynkzone private repository to find the ROOT.war & Thynkzone.aab (for Google Play) files.
+- (For setup) See Thynkzone private repository to find the ROOT.war & Thynkzone.aab (for Google Play) files.
 - This is a developer-instructions readme.
 
 Check the Thynkzone private repository for resources
