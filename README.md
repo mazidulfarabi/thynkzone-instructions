@@ -147,4 +147,3 @@ Add In-app update
 - See youtube (https://youtu.be/OQgekL8uyjk) for how to add in-app update
 - DOCS (https://docs.kodular.io/components/experimental/in-app-update/)
 - Add AdMob
-- Update No Network Page
