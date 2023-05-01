@@ -143,7 +143,4 @@ P.S. Idea for phpmyadmin installation
 - assign a Under Construction page and name it index.html under apache server (htdocs probably) so that whenever tomcat is off, domain shows that page to users
 
 P.S. kodular
-Add In-app update
-- See youtube (https://youtu.be/OQgekL8uyjk) for how to add in-app update
-- DOCS (https://docs.kodular.io/components/experimental/in-app-update/)
 - Add AdMob
