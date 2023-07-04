@@ -52,6 +52,7 @@ Step 1 - Eclipse (required)
 - delete all extra images and img from eclipse, also delete all users tables and thynkzone table entries from database if ROOT is not duplicated for future home-development
 - set cookies to secure in loginuser3.jsp and db.java; change filepaths and '\\' to '/' at following
 - af,bf,cf,ss,db(twice),move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
+>>Change filepath to -> /usr/local/tomcat9/webapps/ROOT/WEB-INF/secured/x.txt (x/y/z/only secured - depending on one at place); In db.java, set imagepath to /usr/local/img/ 
 - export project as ROOT.war
 
 >>Domain Change --> Google reCaptcha at Google reCaptcha website only, (thynkzone.help gmail account), Google Play Console app privacy policy url, Disqus Comments link at Disqus website only, and ssl-certificates at cloudflare and tomcat/conf/...cert and ...key (and maybe also ...ca.bundle)
