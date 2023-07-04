@@ -52,7 +52,9 @@ Step 1 - Eclipse (required)
 - delete all extra images and img from eclipse, also delete all users tables and thynkzone table entries from database if ROOT is not duplicated for future home-development
 - set cookies to secure in loginuser3.jsp and db.java; change filepaths and '\\' to '/' at following
 - af,bf,cf,ss,db(twice),move2,move3,move4(twice),move5,postpro,postproedit,process2,adpro,bgprocess
->>Change filepath to -> /usr/local/tomcat9/webapps/ROOT/WEB-INF/secured/x.txt (x/y/z/only secured - depending on one at place); In db,move (/img/), set imagepath to /usr/local/img/ and in postpro (/images) set: /usr/local/tomcat9/webapps/ROOT/images
+>>Change filepath to -> /usr/local/tomcat9/webapps/ROOT/WEB-INF/secured/x.txt (x/y/z/only secured - depending on one at place);
+>>In db,move,etc. (for urls that end in /img/), set imagepath to /usr/local/img/ and
+>>In postpro,etc. (for urls that end in /images) set: /usr/local/tomcat9/webapps/ROOT/images
 - export project as ROOT.war
 
 >>Domain Change --> Google reCaptcha at Google reCaptcha website only, (thynkzone.help gmail account), Google Play Console app privacy policy url, Disqus Comments link at Disqus website only, and ssl-certificates at cloudflare and tomcat/conf/...cert and ...key (and maybe also ...ca.bundle)
@@ -122,7 +124,8 @@ Step 3 - Notepad++ (optional but very useful)
 
 7) Deploy war (from private repository)
 - go to domain/manager/html/
-- delete current ROOT and deploy the root from thynkzone private repository - root after ssl - deploy after renaming it to ROOT.war
+- check for manager password in private repo ss OR login as sudo -s and navigate to /usr/local/tomcat9/conf/server.xml and see manager password
+- stop and undeploy current ROOT and deploy the root from thynkzone private repository - root (Latest) - deploy after renaming it to ROOT.war
 - check if online
 
 8) Make sure mail reaches
