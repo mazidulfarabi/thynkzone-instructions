@@ -8,10 +8,10 @@ Google Play: https://play.google.com/store/apps/details?id=io.kodular.detectivem
 - Used languages: Java EE, Javascript, Jquery(Ajax), MySQL, HTML, CSS
 - Used ide: Eclipse Java EE
 - Used server: tomcat9
-- (For setup) See Thynkzone private repository to find the ROOT.war & Thynkzone.aab (for Google Play) files.
+- (For setup) See [Thynkzone secrets](https://drive.google.com/drive/folders/1Xm1diL1AbHppjnMonH5-REblwy3IiUCX?usp=drive_link) to find the ROOT.war & Thynkzone.aab (for Google Play) files.
 - This is a developer-instructions readme.
 
-Check the Thynkzone private repository for resources
+Check the [Thynkzone secrets](https://drive.google.com/drive/folders/1Xm1diL1AbHppjnMonH5-REblwy3IiUCX?usp=drive_link) for resources
 
 - Host OS: Linux - Ubuntu 22.04 or Centos 7/8 or Windows - Server / XP / 8 / 10
 - Recommended: Ubuntu 22.04
@@ -41,7 +41,7 @@ Step 1 - Eclipse (required)
 - rename tomcat to tomcat9
 - add tomcat server in eclipse
 - in eclipse, select file -> import -> web -> war
-- import thynkzone private repo's ROOT - after ssl.war after renaming it to thynkzone.war & disselect jars (default) at next
+- import thynkzone secret's ROOT - after ssl.war after renaming it to thynkzone.war & disselect jars (default) at next
 - similarly import thynkzone2.war
 - run as server & add the projects to the server
 - make sure to refresh browser cache if css updates not working
@@ -92,7 +92,7 @@ Step 3 - Notepad++ (optional but very useful)
 - grant all permissions
 - flush previlages
 - create database thynkzone
-- USE thynkzone; copy code from thynkzone.sql at the thynkzone private repository
+- USE thynkzone; copy code from thynkzone.sql at the thynkzone secrets
 - create database users
 - increase max connections -> SET GLOBAL -> restart mysql (service mysql restart)
 - check if mysql running
@@ -108,7 +108,7 @@ Step 3 - Notepad++ (optional but very useful)
 - increase heap storage to minimum 128 Mb https://stackoverflow.com/questions/2718786/how-to-increase-java-heap-space-for-a-tomcat-app - see Aniket Thakur's answer below -- (Optional Step)
 - in server.xml, change max thread size and max connections
 - in sever.xml, create docbase for path img in root, so that upon ROOT.war redeploy, image files aren't lost -> create img folder in /usr/local/ and copy prof.png, blank.webp by following command
-- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in thynkzone private repo) - or wget
+- cp /usr/local/tomcat9/webapps/ROOT/img/prof.png /usr/local/img/prof.png (see ssl-server-xml-edit pics in thynkzone secret repo) - or wget
 - mv /usr/local/tomcat9/webapps/ROOT/img/prof.png and /usr/local/img/blank.webp - wget from any image hosting service
 - check in browser (use ip address if domain n'yet dns pointed and :8080 or /login.jsp if 443 not configured in server.xml) if tomcat running & if not; then check if ports are open in vm network ports
 - make sure in server.xml, port 443 uses -- http11nioprotocol
@@ -118,14 +118,14 @@ Step 3 - Notepad++ (optional but very useful)
 - make sure nameservers are right, then setup dns, ssl, speed and other settings
 - get origin certificate and set security to strict at ssl page
 - create .crt and .key and ca_bundle.crt in tomcat9/conf folder and paste the origin cert's pubklic crt and private key pem
-- edit server.xml (see ssl-server-xml-edit pics in thynkzone private repo and add admin-gui and make allowipaddress.* or uncomment that in valve settings in somefile.xml)
+- edit server.xml (see ssl-server-xml-edit pics in thynkzone secrets and add admin-gui and make allowipaddress.* or uncomment that in valve settings in somefile.xml)
 - edit conf/tomcat-users.xml
 - restart tomcat server and wait for a few minutes to see if worked
 
-7) Deploy war (from private repository)
+7) Deploy war (from secrets)
 - go to domain/manager/html/
-- check for manager password in private repo ss OR login as sudo -s and navigate to /usr/local/tomcat9/conf/server.xml and see manager password
-- stop and undeploy current ROOT and deploy the root from thynkzone private repository - root (Latest) - deploy after renaming it to ROOT.war
+- check for manager password in secrets ss.png OR login as sudo -s and navigate to /usr/local/tomcat9/conf/server.xml and see manager password
+- stop and undeploy current ROOT and deploy the root from thynkzone secrets - root (Latest) - deploy after renaming it to ROOT.war
 - check if online
 
 8) Make sure mail reaches
